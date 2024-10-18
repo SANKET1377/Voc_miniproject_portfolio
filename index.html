@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">|
+    <title>EDITKARO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+</head>
+<body> 
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ourworks">Our Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+        
+            </ul>
+
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+
+        </nav>
+        <div class="header-text">
+            <p>Welcome to <br>EditKaro</span><br></p>
+            
+            
+
+        </div>
+
+    </div>
+
+</div>
+
+<!----------About--------------------->
+<div id="about">
+
+    <div class="container">
+        <div class="row"> 
+            <div class="about-col-1">
+               <img src="images/logo.png" style="border-radius: 15px;">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>
+                    At Editkaro.in, we are dedicated to crafting engaging and high-quality video content tailored to your audience. Whether it's short-form videos for social media, in-depth long-form content, dynamic gaming videos, or eye-catching eCommerce ads, we bring your vision to life. Our services also include professional football edits, documentary-style productions, anime video creation, and advanced color grading for a polished finish.
+
+                    Our goal is simple: to create videos that not only captivate viewers but also strengthen your brand's presence online. Let us help you tell your story, grow your audience, and achieve your marketing aspirations.  
+                
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('services')">Services</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    
+                </div>
+                
+                <div class = "tab-contents active-tab" id="services">
+                    <ul>   
+                        <li><span>Social Media Marketing</span><br>"Crafting captivating campaigns that connect your brand with the audience."</li> 
+                        <li><span>Video Editing</span><br>"Transforming raw footage into compelling stories that resonate."</li> 
+                        <li><span>Color Grading</span><br>"Enhancing visuals with a touch of artistry to elevate your videos."</li> 
+                        <li><span>Typography</span><br>"Bringing words to life with stunning typography that speaks volumes."</li> 
+
+                    </ul>
+
+                  
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>   
+                        <li><span>Online Marketing</span><br>"Maximizing your reach with data-driven strategies that deliver results."</li> 
+                        <li><span>Social Media Marketing</span><br>"Building vibrant communities that foster engagement and brand loyalty."</li> 
+                        <li><span>Brand Reputation Management</span><br>"Safeguarding your brand's image while enhancing credibility and trust."</li> 
+                        
+                    </ul>
+
+                  
+                </div>
+            </div>
+
+
+        </div >
+
+
+    </div>
+</div>
+
+
+<!--- ----services---------->
+<div id="ourworks">
+    <div class="container"></div>
+    <h1>Our Works</h1>
+    <div class="filter-container">
+        <select class="filter-dropdown" onchange="filterVideos()">
+            <option value="all">All Videos</option>
+            <option value="short-form">Short-form Videos</option>
+            <option value="long-form">Long-form Videos</option>
+            <option value="gaming">Gaming Videos</option>
+            <option value="football">Football Edits</option>
+            <option value="ecommerce">eCommerce Ads</option>
+            <option value="documentary">Documentary Style</option>
+            <option value="color-grading">Color Grading</option>
+            <option value="anime">Anime Videos</option>
+            <option value="ads">Ads</option>
+        </select>
+    </div>
+
+    <!-- Short-form Videos Section -->
+    <div class="video-section short-form-section">
+        <h2>Short-form Videos</h2>
+        <a href="https://drive.google.com/drive/folders/1E8TWMEIZYmW0NDIvakrdbRThyN4dzu-v?usp=drive_link" target="_blank" class="view-more-link">View More of Our Short Video Formats</a>
+        
+        <div class="video-gallery">
+            <div class="video-card short-form">
+                <video src="videos/short1.mp4" onclick="playVideo(this)"></video>
+                <h3>Short-form Video 1</h3>
+            </div>
+            <div class="video-card short-form">
+                <video src="videos/short2.mp4" onclick="playVideo(this)"></video>
+                <h3>Short-form Video 2</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Long-form Videos Section -->
+    <div class="video-section long-form-section">
+        <h2>Long-form Videos</h2>
+        <a href="https://drive.google.com/drive/folders/1ccDRiGx0DKP_PHdUTzc0ClBpwmvV18D9?usp=drive_link" target="_blank" class="view-more-link">View More of Our Long Video Formats</a>
+        
+        <div class="video-gallery">
+            <div class="video-card long-form">
+                <video src="videos/long1.mp4" onclick="playVideo(this)"></video>
+                <h3>Long-form Video 1</h3>
+            </div>
+            <div class="video-card long-form">
+                <video src="videos/long2.mp4" onclick="playVideo(this)"></video>
+                <h3>Long-form Video 2</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gaming Videos Section -->
+    <div class="video-section gaming-section">
+        <h2>Gaming Videos</h2>
+        
+        <div class="video-gallery">
+            <div class="video-card gaming">
+                <video src="videos/gaming.mp4" onclick="playVideo(this)"></video>
+                <h3>Gaming Video</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Football Edits Section -->
+    <div class="video-section football-section">
+        <h2>Football Edits</h2>
+        
+        <div class="video-gallery">
+            <div class="video-card football">
+                <video src="videos/football1.mp4" onclick="playVideo(this)"></video>
+                <h3>Football Edit 1</h3>
+            </div>
+            <div class="video-card football">
+                <video src="videos/football2.mp4" onclick="playVideo(this)"></video>
+                <h3>Football Edit 2</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- eCommerce Ads Section -->
+    <div class="video-section ecommerce-section">
+        <h2>eCommerce Ads</h2>
+        
+        <div class="video-gallery">
+            <div class="video-card ecommerce">
+                <video src="videos/ecommerce1.mp4" onclick="playVideo(this)"></video>
+                <h3>eCommerce Ad 1</h3>
+            </div>
+            <div class="video-card ecommerce">
+                <video src="videos/ecommerce2.mp4" onclick="playVideo(this)"></video>
+                <h3>eCommerce Ad 2</h3>
+            </div>
+            <div class="video-card ecommerce">
+                <video src="videos/ecommerce3.mp4" onclick="playVideo(this)"></video>
+                <h3>eCommerce Ad 3</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Documentary Videos Section -->
+    <div class="video-section documentary-section">
+        <h2>Documentary Style</h2>
+        
+        <div class="video-gallery">
+            <div class="video-card documentary">
+                <video src="videos/documentary1.mp4" onclick="playVideo(this)"></video>
+                <h3>Documentary Video</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Color Grading Videos Section -->
+    <div class="video-section color-grading-section">
+        <h2>Color Grading</h2>        
+        <div class="video-gallery">
+            <div class="video-card color-grading">
+                <video src="videos/color-grading1.mp4" onclick="playVideo(this)"></video>
+                <h3>Color Grading Video</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Anime Videos Section -->
+    <div class="video-section anime-section">
+        <h2>Anime Videos</h2>
+        <a href="https://drive.google.com/drive/folders/1cdOt3TsWidrqlr1bpAb7wxhGp49WP7FP?usp=drive_link" target="_blank" class="view-more-link">View More of Our Anime Video Formats</a>
+        
+        <div class="video-gallery">
+            <div class="video-card anime">
+                <video src="videos/anime1.mp4" onclick="playVideo(this)"></video>
+                <h3>Anime Video</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Ads Section -->
+    <div class="video-section ads-section">
+        <h2>Ads</h2>
+        
+        <div class="video-gallery">
+            <div class="video-card ads">
+                <video src="videos/ads1.mp4" onclick="playVideo(this)"></video>
+                <h3>Ad Video 1</h3>
+            </div>
+            <div class="video-card ads">
+                <video src="videos/ads2.mp4" onclick="playVideo(this)"></video>
+                <h3>Ad Video 2</h3>
+            </div>
+            <div class="video-card ads">
+                <video src="videos/ads3.mp4" onclick="playVideo(this)"></video>
+                <h3>Ad Video 3</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> editkaro@email.com</p>
+                <p><i class="fas fa-phone-alt"></i> 0123456789</p>
+
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Mesaage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="copyright">
+        <p>
+            &copy; 2024 Editkaro. <i class="fas fa-video"></i>  All rights reserved.</p>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+<script>  
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(var tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(var tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+
+    
+
+</script>
+
+<script> 
+    var sidemenu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNb8V4ygy_7SE_Q-l2HJT-PpFkKv6UeyZQ_arqYp02Jg-XlQM14RcfSHuXctnnPYQR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Message sent successfully!'
+            setTimeout(function(){
+                msg.innerHTML=""
+
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
