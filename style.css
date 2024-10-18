@@ -330,7 +330,7 @@ h2 {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .video-card {
         width: 100%;
     }
@@ -429,13 +429,13 @@ nav .fas{
 
 }
 /* ---------------------css for small screen--------------- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #header{
-        background-image: url(images/mobilebg.png);
+        background-image: url(images/image.png);
+        
     }
     .header-text{
-        margin-top:70%;
-        font-size:16px;
+        display:none;
     }
     nav .fas{
         display:block;
